@@ -1,0 +1,4 @@
+{
+  "liveServer.settings.port": 5500,
+  "html.customData": ["./html.html-data.json"]
+}
