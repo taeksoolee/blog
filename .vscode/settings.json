@@ -1,4 +1,6 @@
 {
   "liveServer.settings.port": 5500,
-  "html.customData": ["./html.html-data.json"]
+  "html.customData": ["./html.html-data.json"],
+  "lit-html.tags": ["html", "template"],
+  "lit-html.format.enabled": false
 }

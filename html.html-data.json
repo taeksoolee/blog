@@ -2,18 +2,50 @@
   "version": 1.1,
   "tags": [
     {
-      "name": "logo-img",
+      "name": "me-img",
       "description": "",
       "attributes": [
         {
-          "name": "src",
-          "description": "Image Source"
+          "name": "class",
+          "description": "connect img class"
         }
       ],
       "references": [
         {
           "name": ".",
-          "url": "https://taeksoolee.github.io/blog/components/LogoImg.js"
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "common-header",
+      "description": "",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "connect img class"
+        }
+      ],
+      "references": [
+        {
+          "name": ".",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "common-nav",
+      "description": "",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "connect img class"
+        }
+      ],
+      "references": [
+        {
+          "name": ".",
+          "url": ""
         }
       ]
     }

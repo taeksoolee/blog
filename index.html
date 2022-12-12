@@ -4,13 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-</head>
-<body>
-  <h1>My Blog</h1>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
 
-  <script defer src="../config.js"></script>
-  <script defer src="../components/LogoImg.js"></script>
-  <script defer src="../components/CodeBox.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>TAEKSOOLEE Blog</title>
+</head>
+<body class="min-h-screen flex flex-col">
+  <common-header></common-header>
+  <div class="flex mt-10 h-full flex-1">
+    <section class="min-h-full">
+      <div class="p-10">
+        <common-nav></common-nav>
+      </div>
+    </section>
+    <section class="flex-1">
+      <div class="p-10">
+        <h1 class="text-3xl font-bold">TEAKEOO LEE _BLOG</h1>
+      </div>
+    </section>
+  </div>
+  
+  <script defer src="https://cdn.tailwindcss.com"></script>
+
+  <script defer src="/blog/config.js"></script>
+  <script type="module" src="/blog/components/layout/CommonHeader.mjs"></script>
+  <script type="module" src="/blog/components/layout/CommonNav.mjs"></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+
+  <style>
+    .text {
+      /* font-family: 'Noto Sans KR' 'Nerko One'; */
+      /* font-family: 'Nerko One'; */
+      /* font-family: 'Nerko One'; */
+      font-family: 'Dongle';
+
+      font-size: 20px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <common-header></common-header>
+  <p class="text">안녕하세요</p>
+  <p class="text">저는 이택수 입니다.</p>
+
+  <hr />
+
+  <!-- <pre data-src="./code-block/helloworld.js"></pre> -->
+
+  <code-box type="html" url="/blog/code/html/hello-world.html">
+  </code-box>
+
+  <code-box type="javascript" url="/blog/code/javascript/sum.js">
+  </code-box>
+
+  <hr />
+  <p class="text">abcdefghijklmnopqrstuvwxyz</p>
+  <p class="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  
+  <script defer src="https://cdn.tailwindcss.com"></script>
+
+  <script defer src="/blog/config.js"></script>
+  <script defer type="module" src="/blog/components/layout/CommonHeader.mjs"></script>
+  <script defer type="module" src="/blog/components/common/CodeBox.mjs"></script>
+</body>
+</html>

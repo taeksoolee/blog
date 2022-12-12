@@ -19,6 +19,7 @@
   <title>Document</title>
 </head>
 <body>
+  <common-header></common-header>
   <p class="text">안녕하세요</p>
   <p class="text">저는 이택수 입니다.</p>
 
@@ -26,20 +27,17 @@
 
   <!-- <pre data-src="./code-block/helloworld.js"></pre> -->
 
-  <code-box type="html" url="../code/html/hello-world.html">
+  <code-box type="html" url="/code/html/hello-world.html">
   </code-box>
 
-  <code-box type="javascript" url="../code/javascript/sum.js">
+  <code-box type="javascript" url="/code/javascript/sum.js">
   </code-box>
-
   <hr />
-  <p class="text">abcdefghijklmnopqrstuvwxyz</p>
-  <p class="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
   
-  <!-- <logo-img src="../assets/images/bg-sky.jpeg" id="tt"></logo-img> -->
+  <script defer src="https://cdn.tailwindcss.com"></script>
 
-  <script defer src="../config.js"></script>
-  <script defer src="../components/LogoImg.js"></script>
-  <script defer src="../components/CodeBox.js"></script>
+  <script defer src="/blog/config.js"></script>
+  <script defer type="module" src="/blog/components/layout/CommonHeader.mjs"></script>
+  <script defer type="module" src="/blog/components/common/CodeBox.mjs"></script>
 </body>
 </html>

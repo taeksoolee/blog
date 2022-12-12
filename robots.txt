@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://evcaro.com/sitemap.xml
+Sitemap: https://taeksoolee.github.io/blog/sitemap.xml
