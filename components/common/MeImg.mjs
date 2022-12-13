@@ -14,7 +14,7 @@ customElements.define(
       render(
         html` <img
           src=${this.imgSrc}
-          class="inline-block w-28 h-28 m-4 bg-white mar rounded-full"
+          class="inline-block w-full h-full bg-white rounded-full"
         />`,
         this
       );

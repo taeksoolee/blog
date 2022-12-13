@@ -5,7 +5,7 @@ function loadPrismCss() {
   const head= document.getElementsByTagName('head')[0];
   const link= document.createElement('link');
   link.rel= 'stylesheet';
-  link.href= '../assets/libs/prism.css';
+  link.href= '/blog/assets/libs/prism.css';
   head.appendChild(link);
 }
 
@@ -13,12 +13,10 @@ function loadPrismJs() {
   const head = document.getElementsByTagName('head')[0];
   const script= document.createElement('script');
   script.type= 'text/javascript';
-  script.src= '../assets/libs/prism.js';
+  script.src= '/blog/assets/libs/prism.js';
   head.appendChild(script);
 }
 
-loadPrismCss();
-loadPrismJs();
 customElements.define('code-box', class extends BaseElement {
   constructor() {
     super();
@@ -51,4 +49,9 @@ customElements.define('code-box', class extends BaseElement {
         render(template, this);
       });
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadPrismCss();
+  loadPrismJs();
 });

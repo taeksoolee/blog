@@ -4,40 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" type="image/x-icon" href="/blog/assets/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="/blog/assets/style.css">
 
-  <style>
-    .text {
-      /* font-family: 'Noto Sans KR' 'Nerko One'; */
-      /* font-family: 'Nerko One'; */
-      /* font-family: 'Nerko One'; */
-      font-family: 'Dongle';
-
-      font-size: 20px;
-    }
-  </style>
-  <title>Document</title>
+  <title>Tech Product</title>
 </head>
 <body>
-  <common-header></common-header>
-  <p class="text">안녕하세요</p>
-  <p class="text">저는 이택수 입니다.</p>
+  <!-- meta -->
+  <div id="meta">
+    <h1>Tech Product</h1>
+  </div>
 
-  <hr />
-
-  <!-- <pre data-src="./code-block/helloworld.js"></pre> -->
-
-  <code-box type="html" url="/code/html/hello-world.html">
-  </code-box>
-
-  <code-box type="javascript" url="/code/javascript/sum.js">
-  </code-box>
-  <hr />
+  <first-template>
+    <section>
+      <code-box type="html" url="/blog/code/html/hello-world.html">
+      </code-box>
+    
+      <code-box type="javascript" url="/blog/code/javascript/sum.js">
+      </code-box>
+      <code-box type="javascript" url="/blog/code/javascript/sum.js">
+      </code-box>
+      <code-box type="javascript" url="/blog/code/javascript/sum.js">
+      </code-box>
+      <code-box type="javascript" url="/blog/code/javascript/sum.js">
+      </code-box>
+      <code-box type="javascript" url="/blog/code/javascript/sum.js">
+      </code-box>
+    </section>
+  </first-template>
+  </div>
   
-  <script defer src="https://cdn.tailwindcss.com"></script>
-
   <script defer src="/blog/config.js"></script>
-  <script defer type="module" src="/blog/components/layout/CommonHeader.mjs"></script>
-  <script defer type="module" src="/blog/components/common/CodeBox.mjs"></script>
+  <script defer src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/blog/assets/script.js"></script>
+  <script type="module" src="/blog/components/layout/index.mjs"></script>
+  <script type="module" src="/blog/components/common/COdeBox.mjs"></script>
 </body>
 </html>

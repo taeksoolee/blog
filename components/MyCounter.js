@@ -1,5 +1,5 @@
-import { html, render } from "../assets/libs/lit-html@2.5.0.min.mjs";
-import { StateElement } from "./base/StateElement.js";
+import { html, render } from "/blog/assets/libs/lit-html@2.5.0.min.mjs";
+import { StateElement } from "/blog/base/StateElement.js";
 
 customElements.define(
   "my-counter",
