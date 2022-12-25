@@ -10,5 +10,5 @@ app.use(ROOT_PATH, express.static(__dirname))
 
 app.listen(4000, () => {
   console.log('🚀 Run Dev Server!');
-  console.log(`index path is http://localhost:4000${ROOT_PATH}`);
+  console.log(`index path is [ http://localhost:4000${ROOT_PATH} ]`);
 })
