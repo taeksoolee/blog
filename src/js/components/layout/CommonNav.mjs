@@ -12,7 +12,7 @@ customElements.define(
 
     render() {
       const convertToKebabCase = (string) => {
-        return string.replace(/\s+/g, "-").toLowerCase();
+        return string.toLowerCase().replace(/\s+/g, "-");
       };
 
       const anchorTemplate = (path) => html`<li class="flex-1">
@@ -20,7 +20,7 @@ customElements.define(
           class="block p-5 border-2 hover:border-blue-400"
           href=${`/blog/site/${path}`}
           @click=${this.anchorHandler.bind(this)}
-          >${path === "" ? "Root" : convertToKebabCase(path)}</a
+          >${path === "" ? "Root" : path.replace(/-/g, ' ')}</a
         >
       </li>`;
 

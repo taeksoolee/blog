@@ -1,5 +1,10 @@
+import { defaultTitle } from './config.js';
+import tailwindConfig from './tailwind.config.js';
+
 import gulp from 'gulp';
 import run from 'gulp-run';
+
+import debug from 'gulp-debug';
 
 import gulpIf from 'gulp-if';
 import fileinclude from 'gulp-file-include';
@@ -7,7 +12,11 @@ import fileinclude from 'gulp-file-include';
 const flatten = (obj) => {
   let r = [];
   for(const key in obj) {
-    r = [...r, ...obj[key]];
+    if(Array.isArray(obj[key])) {
+      r = [...r, ...obj[key]];
+    } else {
+      r = [...r, ...flatten(obj[key])];
+    }
   }
   return r;
 }
@@ -21,40 +30,52 @@ const watchSrc = {
   html: [
     'src/html/**/*.html', 'src/html/**/*.htm'
   ]
-}
+};
 
-gulp.task('default', async () => {
-  gulp.watch(
-    watchSrc.js.components, 
-    gulp.parallel([
-      'components',
-    ]),
+console.log(flatten(watchSrc));
+
+gulp.task('default', async (fn) => {
+  const watcher = gulp.watch(
+    flatten(watchSrc)
   );
 
-  gulp.watch(
-    watchSrc.html, 
-    gulp.parallel([
-      'html'
-    ]),
-  );
+  watcher.on('change', function(path, _stats) {
+    if(path.includes('src/js/components')) {
+      componentsTask()
+    }
+
+    if(path.includes('src/html')) {
+      htmlTask();
+    }
+  })
 });
 
-gulp.task('components', async () => {
-    run('npm run webpack:components')
-      .exec()
-      .on('error', function() {
-        console.log('webpack :: components build error');
-      });
-});
+gulp.task('components', componentsTask);
+async function componentsTask() {
+  gulp.src(watchSrc.js.components)
+    .pipe(debug({title: 'components:'}))
+    .pipe(
+      run('npm run webpack:components')
+        .exec()
+        .on('error', function() {
+          console.log('webpack :: components build error');
+        })
+    );
+};
 
-gulp.task('html', async () => {
-  gulp.src(watchSrc.html)
-    .pipe(fileinclude({
+gulp.task('html', htmlTask);
+async function htmlTask() {
+  gulp.src(watchSrc.html[0])
+    .pipe(debug({title: 'html:'}))
+    .pipe(gulpIf('*.html', fileinclude({
       prefix: '@@',
       basepath: '@file',
       context: {
-        
+        nullString: '',
+        titleConcatString: '|',
+        defaultTitle,
+        tailwindConfig: JSON.stringify(tailwindConfig),
       }
-    }))
+    })))
     .pipe(gulp.dest('site'));
-});
+}

@@ -16,33 +16,62 @@ customElements.define(
     }
 
     render() {
-      const navigateStr = location.pathname.replace('/blog/site', '').replace(/\//g, ' / ').replace('.html', '');
+      const navigateStr = location.pathname
+        .replace('/blog/site', '')
+        .replace(/\//g, ' / ')
+        .replace(/\/ $/, '')
+        .replace('.html', '');
+
+      console.log(navigateStr);
+
+      const handleClick = () => {
+        history.back();
+      }
+
+      const formatter = Intl.DateTimeFormat('ko', {
+        dateStyle: 'long',
+        timeStyle: 'short'
+      })
+
+      const modifedDateStr = formatter.format(new Date(window.document.lastModified));
 
       const template = html`
         <div class="sticky top-0 z-50">
           <common-header></common-header>
         </div>
-        <div class="flex-1 flex w-4/5 mt-12 h-full m-auto">
-          <section class="hidden lg:block px-4 py-10 w-48">
+        <div class="flex justify-center flex-1 w-full mt-12 h-full m-0 
+          lg:m-auto lg:w-8/12">
+          <!--  -->
+          <section class="hidden 2xl:block px-4 py-10 w-48">
             <div class="sticky top-32">
               <common-nav></common-nav>
             </div>
           </section>
-          <section class="flex-1 max-w-full px-4 py-10">
+          <!--  -->
+          <section class="flex-1 max-w-5xl px-4 py-10">
             <div>
-              <div>${navigateStr}</div>
+              <span class="text-xl mr-5 text-gray-700 hover:text-blue-400 cursor-pointer">
+                <i class="fa fa-arrow-left" @click=${handleClick}></i>
+              </span>
+              ${navigateStr.replace(/-/g, ' ')}
             </div>
-            <h1 class="text-3xl font-bold mt-8">${this.title}</h1>
-            <article class="mt-10">
+            <div class="
+              flex justify-between items-start flex-col
+              lg:items-end lg:flex-row
+            ">
+              <h1 class="text-3xl font-bold mt-8">
+                ${this.title}
+              </h1>
+            </div>
+            <div class="text-sm mt-3 float-right">${modifedDateStr}</div>
+            <article class="mt-20">
               ${this.children}
             </article>
           </section>
-          <section class="min-h-full hidden lg:block px-4 py-10 w-48">
+          <!--  -->
+          <section class="min-h-full hidden 2xl:block px-4 py-10 w-48">
             <div class="sticky top-32">
-              <h2 class="text-xl mt-4">최근 게시글</h2>
-              <article>Tech Product - 드디어 샀다. Q45 헤드셋 후기</article>
-              <h2 class="text-xl mt-4">인기 게시글</h2>
-              <article>Development - evcaro 개발 후기</article>
+              <recent-list></recent-list>
             </div>
           </section>
         </div>

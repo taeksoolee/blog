@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 @@include('../include/head.htm', {
   title: 'Tech Product'
 })
@@ -10,19 +10,13 @@
 
   <first-template>
     <section>
-      <code-box type="html" url="/blog/code/html/index.html">
-      </code-box>
+      <category-list
+        root="tech-product"
+        file="index.html"
+      ></category-list>
     </section>
   </first-template>
-  </div>
   
-  <script defer src="https://cdn.tailwindcss.com"></script>
-
-  <script type="text/javascript" src="/blog/dist/components.js"></script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      document.body.style.display = '';
-    });
-  </script>
+  @@include('../include/scripts.htm')
 </body>
 </html>

@@ -1,0 +1,62 @@
+import { html, render } from 'lit-html';
+import { BaseElement } from "../base/BaseElement.mjs";
+
+import { siteData$ } from '../observables.mjs';
+
+customElements.define(
+  "category-list",
+  class extends BaseElement {
+    list = [];
+    static get observedAttributes() {
+      // return ["class"];
+      return [];
+    }
+
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      super.connectedCallback();
+      const currRoot = this.getAttribute('root') ?? '';
+      const currFile = this.getAttribute('file') ?? 'index.html';
+
+      siteData$.subscribe({
+        next: (siteData) => {
+          this.list = siteData.filter(v => v.dir[0] === currRoot && v.file.fileName !== currFile);
+          this.render();
+        },
+        complete: () => {},
+      });
+    }
+
+    render() {
+      
+        
+      render(
+        html`
+          <ul class="" >
+            ${this.list
+                .map(item => html`
+                  <li 
+                    class="flex justify-between items-end p-3 border-b-2 hover:text-blue-400 cursor-pointer"
+                    @click=${() => {
+                      location.href = `./${item.file.fileName}`;
+                    }}
+                  >
+                    <span class="text-lg">
+                      ${item.file.title}
+                    </span>
+                    <span class="text-sm">
+                      ${new Date(item.file.modifiedDate).toLocaleDateString('ko')}
+                    </span>
+                  </li>
+                `)
+            }
+          </ul>
+        `,
+        this
+      );
+    }
+  }
+);

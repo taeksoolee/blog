@@ -1,6 +1,2 @@
-// import './MyCounter.js';
-
-import './common/CodeBox.mjs'
-import './common/MeImg.mjs'
-
+import './common/index.mjs'
 import './layout/index.mjs'

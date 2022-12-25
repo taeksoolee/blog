@@ -8,6 +8,9 @@ export default {
     path: path.resolve(__dirname, 'dist'),
     filename: 'components.js',
   },
+  resolve: {
+    extensions: ['.js', '.mjs'],
+  },
   // devtool: 'eval-cheap-module-source-map'
   // devtool: 'eval'
   devtool: 'source-map'

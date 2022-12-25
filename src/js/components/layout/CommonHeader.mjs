@@ -14,7 +14,7 @@ customElements.define(
 
     render() {
       const template = html`
-        <header class="flex flex-row justify-center w-full h-20 bg-blue-400 relative">
+        <header class="bg-blue-400 flex flex-row justify-center w-full h-20 relative">
           <div class="w-24 h-24 m-4">
             <me-img></me-img>
           </div>

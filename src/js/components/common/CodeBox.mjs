@@ -31,7 +31,7 @@ customElements.define('code-box', class extends BaseElement {
 
         const template = html`
           <pre>
-            <code class=${`language-${type}`}>${codeText}</code>
+            <code class=${`language-${type}`}>${'\n' + codeText + '\n '}</code>
           </pre>
         `;
         render(template, this);
