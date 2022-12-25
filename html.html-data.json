@@ -9,12 +9,6 @@
           "name": "class",
           "description": "connect img class"
         }
-      ],
-      "references": [
-        {
-          "name": ".",
-          "url": ""
-        }
       ]
     },
     {
@@ -25,12 +19,6 @@
           "name": "class",
           "description": "connect img class"
         }
-      ],
-      "references": [
-        {
-          "name": ".",
-          "url": ""
-        }
       ]
     },
     {
@@ -40,12 +28,6 @@
         {
           "name": "class",
           "description": "connect img class"
-        }
-      ],
-      "references": [
-        {
-          "name": ".",
-          "url": ""
         }
       ]
     }

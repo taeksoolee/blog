@@ -1,5 +1,5 @@
-import { html, render } from "/blog/assets/libs/lit-html@2.5.0.min.mjs";
-import { BaseElement } from "/blog/components/base/BaseElement.mjs";
+import { html, render } from 'lit-html';
+import { BaseElement } from "../base/BaseElement.mjs";
 
 customElements.define(
   "first-template",
@@ -16,6 +16,8 @@ customElements.define(
     }
 
     render() {
+      const navigateStr = location.pathname.replace('/blog/site', '').replace(/\//g, ' / ').replace('.html', '');
+
       const template = html`
         <div class="sticky top-0 z-50">
           <common-header></common-header>
@@ -27,6 +29,9 @@ customElements.define(
             </div>
           </section>
           <section class="flex-1 max-w-full px-4 py-10">
+            <div>
+              <div>${navigateStr}</div>
+            </div>
             <h1 class="text-3xl font-bold mt-8">${this.title}</h1>
             <article class="mt-10">
               ${this.children}

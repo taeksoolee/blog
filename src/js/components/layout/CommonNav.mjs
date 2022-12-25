@@ -1,5 +1,5 @@
-import { html, render } from "/blog/assets/libs/lit-html@2.5.0.min.mjs";
-import { BaseElement } from "/blog/components/base/BaseElement.mjs";
+import { html, render } from 'lit-html';
+import { BaseElement } from "../base/BaseElement.mjs";
 
 customElements.define(
   "common-nav",
@@ -18,9 +18,9 @@ customElements.define(
       const anchorTemplate = (path) => html`<li class="flex-1">
         <a
           class="block p-5 border-2 hover:border-blue-400"
-          href=${"/blog" + path}
+          href=${`/blog/site/${path}`}
           @click=${this.anchorHandler.bind(this)}
-          >${path === "/" ? "Root" : convertToKebabCase(path)}</a
+          >${path === "" ? "Root" : convertToKebabCase(path)}</a
         >
       </li>`;
 
@@ -36,8 +36,12 @@ customElements.define(
       const template = html`
         <nav>
           <ul class="flex flex-col w-40">
-            ${["/", "/tech-product", "/development"].map((p) =>
-              anchorTemplate(p)
+            ${[
+              "", 
+              "tech-product", 
+              "development"
+            ].map((path) =>
+              anchorTemplate(`${path}`)
             )}
           </ul>
         </nav>

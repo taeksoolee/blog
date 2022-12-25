@@ -1,13 +1,5 @@
-import { html, render } from "/blog/assets/libs/lit-html@2.5.0.min.mjs";
-import { BaseElement } from "/blog/components/base/BaseElement.mjs";
-
-function loadPrismCss() {
-  const head= document.getElementsByTagName('head')[0];
-  const link= document.createElement('link');
-  link.rel= 'stylesheet';
-  link.href= '/blog/assets/libs/prism.css';
-  head.appendChild(link);
-}
+import { html, render } from 'lit-html';
+import { BaseElement } from "../base/BaseElement.mjs";
 
 function loadPrismJs() {
   const head = document.getElementsByTagName('head')[0];
@@ -39,19 +31,12 @@ customElements.define('code-box', class extends BaseElement {
 
         const template = html`
           <pre>
-            <code class=${`language-${type}`}>
-              ${'text/' + type + '\n\n' + codeText}
-            </code>
+            <code class=${`language-${type}`}>${codeText}</code>
           </pre>
         `;
-
-
         render(template, this);
+
+        loadPrismJs();
       });
   }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  loadPrismCss();
-  loadPrismJs();
 });

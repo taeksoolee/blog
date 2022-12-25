@@ -1,7 +1,5 @@
-import { html, render } from "/blog/assets/libs/lit-html@2.5.0.min.mjs";
-import { BaseElement } from "/blog/components/base/BaseElement.mjs";
-
-import '/blog/components/common/MeImg.mjs';
+import { html, render } from 'lit-html';
+import { BaseElement } from "../base/BaseElement.mjs";
 
 customElements.define(
   "common-header",
