@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "npm run generate:meta && git add ./data/site-map.json"
+  }
+}
