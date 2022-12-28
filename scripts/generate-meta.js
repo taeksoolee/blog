@@ -36,6 +36,7 @@ function inspectPaths(list) {
           fileName,
           modifiedDate: getModifiedDate(realPath),
           title: $('#meta h1').text(),
+          pageId: $('#meta #pageId').text(),
         }
       })
     } else {
@@ -47,8 +48,6 @@ function inspectPaths(list) {
 
   return r;
 }
-
-
 
 function generatePageSource() {
   const sites = fs.readdirSync(path.resolve(...paths));

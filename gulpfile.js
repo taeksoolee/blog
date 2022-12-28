@@ -1,5 +1,5 @@
 import { defaultTitle } from './config.js';
-import tailwindConfig from './tailwind.config.js';
+// import tailwindConfig from './tailwind.config.js';
 
 import gulp from 'gulp';
 import run from 'gulp-run';
@@ -74,7 +74,7 @@ async function htmlTask() {
         nullString: '',
         titleConcatString: '|',
         defaultTitle,
-        tailwindConfig: JSON.stringify(tailwindConfig),
+        // tailwindConfig: JSON.stringify(tailwindConfig),
       }
     })))
     .pipe(gulp.dest('site'));

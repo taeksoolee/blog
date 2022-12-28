@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="/blog/assets/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="/blog/assets/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/blog/assets/libs/prism.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    
+  </script>
+  
+  <title>TAEKSOOLEE Blog | 눈내리는 배경 </title>
+</head>
+<body class="min-h-screen flex flex-col" style="display: none;">
+  <div id="meta" style="display: none;">
+  <h1>눈내리는 배경</h1>
+  <p id="pageId">1-4</p>
+</div>
+
+  <first-template>
+    <section>
+      <p>백그라운드에 눈 내리는 배경을 그리는 코드를 작성합니다.</p>
+      <code-box type="html" url="/blog/code/html/snow-background.html"></code-box>
+
+      <p>참고 유튜브: <a href="https://www.youtube.com/watch?v=3CuUmy7jX6k">노마드 코더</a></p>
+    </section>
+  </first-template>
+
+  
+<style>
+  #snowflakeBackground {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+
+  .snowflake {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: .5px .5px 5px 1px #9A9A9A;
+    position: fixed;
+    top: -5px;
+    z-index: 99999;
+  }
+
+  @keyframes fall {
+    from {}
+    to {
+      /* top: 100vh; */
+      transform: translateY(100vh);
+      /* opacity: 0; */
+    }
+  }
+</style>
+
+<div id="snowflakeBackground"></div>
+
+<script>
+  const MIN_DURATION = 10;
+  function makeSnowflake() {
+    const snowflakeBackground = document.querySelector('#snowflakeBackground');
+
+    const snowflake = document.createElement('div');
+    const delay = Math.random() * 20;
+    const initialOpacity = Math.random() * 0.5;
+    const duration = Math.random() * 20 + MIN_DURATION;
+
+    snowflake.classList.add('snowflake');
+    snowflake.style.left = `${Math.random() *  snowflakeBackground.offsetWidth}px`;
+    snowflake.style.animation = `fall ${duration}s linear`;
+    snowflake.style.animationDelay = `${delay}s`;
+    snowflake.style.opacity = initialOpacity;
+
+    snowflakeBackground.appendChild(snowflake);
+
+    setTimeout(() => {
+      snowflakeBackground.removeChild(snowflake);
+      makeSnowflake();
+    }, (duration + delay) * 1000);
+  }
+
+  function startSnowflake() {
+    for(let i=0; i<300; i++) {
+      makeSnowflake();
+    }
+  }
+</script>
+
+
+  
+  <script type="text/javascript" src="/blog/dist/components.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.display = '';
+  });
+</script>
+
+  <script>
+    window.addEventListener('load', function() {
+      startSnowflake();
+    })
+  </script>
+</body>
+</html>

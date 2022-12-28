@@ -23,7 +23,12 @@ customElements.define(
 
       siteData$.subscribe({
         next: (siteData) => {
+          window.siteData = siteData;
+          const parseId = (val) => parseInt(val.split('-')[1]);
+
           this.list = siteData.filter(v => v.dir[0] === currRoot && v.file.fileName !== currFile);
+          // 내림차순 정렬
+          this.list.sort((a, b) => parseId(b.file.pageId) - parseId(a.file.pageId));
           this.render();
         },
         complete: () => {},
@@ -45,7 +50,7 @@ customElements.define(
                     }}
                   >
                     <span class="text-lg">
-                      ${item.file.title}
+                      <strong class="font-bold">[${item.file.pageId}]</strong> ${item.file.title}
                     </span>
                     <span class="text-sm">
                       ${new Date(item.file.modifiedDate).toLocaleDateString('ko')}

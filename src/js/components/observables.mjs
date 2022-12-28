@@ -13,5 +13,5 @@ export const siteData$ = fromFetch('/blog/data/site-data.json')
     catchError(err => {
       console.error(err);
       return of({error: true, message: err.message});
-    })
+    }),
   );

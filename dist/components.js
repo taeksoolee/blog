@@ -3721,7 +3721,12 @@ customElements.define(
 
       _observables_mjs__WEBPACK_IMPORTED_MODULE_2__.siteData$.subscribe({
         next: (siteData) => {
+          window.siteData = siteData;
+          const parseId = (val) => parseInt(val.split('-')[1]);
+
           this.list = siteData.filter(v => v.dir[0] === currRoot && v.file.fileName !== currFile);
+          // 내림차순 정렬
+          this.list.sort((a, b) => parseId(b.file.pageId) - parseId(a.file.pageId));
           this.render();
         },
         complete: () => {},
@@ -3743,7 +3748,7 @@ customElements.define(
                     }}
                   >
                     <span class="text-lg">
-                      ${item.file.title}
+                      <strong class="font-bold">[${item.file.pageId}]</strong> ${item.file.title}
                     </span>
                     <span class="text-sm">
                       ${new Date(item.file.modifiedDate).toLocaleDateString('ko')}
@@ -4186,7 +4191,7 @@ const siteData$ = (0,rxjs_fetch__WEBPACK_IMPORTED_MODULE_0__.fromFetch)('/blog/d
     (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.catchError)(err => {
       console.error(err);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.of)({error: true, message: err.message});
-    })
+    }),
   );
 
 
