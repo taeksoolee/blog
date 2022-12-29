@@ -77,5 +77,12 @@ async function htmlTask() {
         // tailwindConfig: JSON.stringify(tailwindConfig),
       }
     })))
+    .pipe(
+      run('npm run generate:meta')
+        .exec()
+        .on('error', function() {
+          console.log('generate meta error');
+        })
+    )
     .pipe(gulp.dest('site'));
 }

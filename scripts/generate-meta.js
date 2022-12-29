@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 
 function getModifiedDate(path) {
-  const mDate = new Date(fs.statSync(path).mtime);
+  const mDate = new Date(fs.statSync(path.replace('site', 'src/html')).mtime);
   return mDate;
   
 }
