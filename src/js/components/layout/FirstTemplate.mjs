@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { format as formatTimeago, cancel, register } from 'timeago.js';
+// import { format as formatTimeago, cancel, register } from 'timeago.js';
 import { displayDateFormatter } from '../../utils/format.js';
 import { BaseElement } from "../base/BaseElement.mjs";
 
