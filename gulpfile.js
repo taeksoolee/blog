@@ -68,8 +68,9 @@ async function htmlTask() {
   gulp.src(watchSrc.html[0])
     .pipe(debug({title: 'html:'}))
     .pipe(gulpIf('*.html', fileinclude({
-      prefix: '@@',
+      prefix: '!#',
       basepath: '@file',
+      // indent: true,
       context: {
         nullString: '',
         titleConcatString: '|',
@@ -80,8 +81,8 @@ async function htmlTask() {
     .pipe(
       run('npm run generate:meta')
         .exec()
-        .on('error', function() {
-          console.log('generate meta error');
+        .on('error', function(err) {
+          console.log('generate meta error ::: ', err);
         })
     )
     .pipe(gulp.dest('site'));

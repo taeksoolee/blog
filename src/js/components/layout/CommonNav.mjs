@@ -15,14 +15,16 @@ customElements.define(
         return string.toLowerCase().replace(/\s+/g, "-");
       };
 
-      const anchorTemplate = (path) => html`<li class="flex-1">
-        <a
-          class="block p-5 border-2 hover:border-blue-400"
-          href=${`/blog/site/${path}`}
-          @click=${this.anchorHandler.bind(this)}
-          >${path === "" ? "Root" : path.replace(/-/g, ' ')}</a
-        >
-      </li>`;
+      const anchorTemplate = (path) => html`
+        <li class="flex-1">
+          <a
+            class="block p-3 border-b-2 hover:border-primary hover:text-primary"
+            href=${`/blog/site/${path}`}
+            @click=${this.anchorHandler.bind(this)}
+            >${path === "" ? "Root" : path.replace(/-/g, ' ')}</a
+          >
+        </li>
+      `;
 
       const loadingTemplate = this.isLoading
         ? html`<div
@@ -34,8 +36,11 @@ customElements.define(
         : "";
 
       const template = html`
-        <nav>
-          <ul class="flex flex-col w-40">
+        <div class="mb-4">
+          <h4 class="text-lg text-white font-bold">📚 카테고리 바로가기</h4>
+        </div>
+        <nav class="shadow-md bg-white">
+          <ul class="flex flex-col">
             ${[
               "", 
               "tech-product", 

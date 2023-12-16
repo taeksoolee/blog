@@ -14,7 +14,8 @@ customElements.define(
       render(
         html` <img
           src=${this.imgSrc}
-          class="inline-block w-full h-full bg-white rounded-full"
+          class="inline-block w-full h-full bg-white rounded-full cursor-pointer"
+          @click=${() => {location.href = 'https://taeksoolee.github.io'}}
         />`,
         this
       );

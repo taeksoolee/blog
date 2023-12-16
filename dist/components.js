@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/rxjs/dist/esm5/internal/NotificationFactories.js":
@@ -7,7 +8,6 @@
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "COMPLETE_NOTIFICATION": () => (/* binding */ COMPLETE_NOTIFICATION),
@@ -39,7 +39,6 @@ function createNotification(kind, value, error) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Observable": () => (/* binding */ Observable)
@@ -162,7 +161,6 @@ function isSubscriber(value) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "EMPTY_OBSERVER": () => (/* binding */ EMPTY_OBSERVER),
@@ -371,7 +369,6 @@ var EMPTY_OBSERVER = {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "EMPTY_SUBSCRIPTION": () => (/* binding */ EMPTY_SUBSCRIPTION),
@@ -534,7 +531,6 @@ function execFinalizer(finalizer) {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "config": () => (/* binding */ config)
@@ -556,7 +552,6 @@ var config = {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fromFetch": () => (/* binding */ fromFetch)
@@ -628,7 +623,6 @@ function fromFetch(input, initWithSelector) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "from": () => (/* binding */ from)
@@ -650,7 +644,6 @@ function from(input, scheduler) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fromArrayLike": () => (/* binding */ fromArrayLike),
@@ -825,7 +818,6 @@ function process(asyncIterable, subscriber) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "of": () => (/* binding */ of)
@@ -852,7 +844,6 @@ function of() {
   \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "OperatorSubscriber": () => (/* binding */ OperatorSubscriber),
@@ -930,7 +921,6 @@ var OperatorSubscriber = (function (_super) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "catchError": () => (/* binding */ catchError)
@@ -974,7 +964,6 @@ function catchError(selector) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "observeOn": () => (/* binding */ observeOn)
@@ -1001,7 +990,6 @@ function observeOn(scheduler, delay) {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeOn": () => (/* binding */ subscribeOn)
@@ -1024,7 +1012,6 @@ function subscribeOn(scheduler, delay) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "switchMap": () => (/* binding */ switchMap)
@@ -1065,7 +1052,6 @@ function switchMap(project, resultSelector) {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleArray": () => (/* binding */ scheduleArray)
@@ -1098,7 +1084,6 @@ function scheduleArray(input, scheduler) {
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleAsyncIterable": () => (/* binding */ scheduleAsyncIterable)
@@ -1137,7 +1122,6 @@ function scheduleAsyncIterable(input, scheduler) {
   \****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleIterable": () => (/* binding */ scheduleIterable)
@@ -1187,7 +1171,6 @@ function scheduleIterable(input, scheduler) {
   \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleObservable": () => (/* binding */ scheduleObservable)
@@ -1211,7 +1194,6 @@ function scheduleObservable(input, scheduler) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "schedulePromise": () => (/* binding */ schedulePromise)
@@ -1235,7 +1217,6 @@ function schedulePromise(input, scheduler) {
   \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleReadableStreamLike": () => (/* binding */ scheduleReadableStreamLike)
@@ -1257,7 +1238,6 @@ function scheduleReadableStreamLike(input, scheduler) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduled": () => (/* binding */ scheduled)
@@ -1321,7 +1301,6 @@ function scheduled(input, scheduler) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "timeoutProvider": () => (/* binding */ timeoutProvider)
@@ -1356,7 +1335,6 @@ var timeoutProvider = {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getSymbolIterator": () => (/* binding */ getSymbolIterator),
@@ -1379,7 +1357,6 @@ var iterator = getSymbolIterator();
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "observable": () => (/* binding */ observable)
@@ -1395,7 +1372,6 @@ var observable = (function () { return (typeof Symbol === 'function' && Symbol.o
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "UnsubscriptionError": () => (/* binding */ UnsubscriptionError)
@@ -1422,7 +1398,6 @@ var UnsubscriptionError = (0,_createErrorClass__WEBPACK_IMPORTED_MODULE_0__.crea
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "popNumber": () => (/* binding */ popNumber),
@@ -1455,7 +1430,6 @@ function popNumber(args, defaultValue) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "arrRemove": () => (/* binding */ arrRemove)
@@ -1476,7 +1450,6 @@ function arrRemove(arr, item) {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createErrorClass": () => (/* binding */ createErrorClass)
@@ -1501,7 +1474,6 @@ function createErrorClass(createImpl) {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "captureError": () => (/* binding */ captureError),
@@ -1545,7 +1517,6 @@ function captureError(err) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "executeSchedule": () => (/* binding */ executeSchedule)
@@ -1577,7 +1548,6 @@ function executeSchedule(parentSubscription, scheduler, work, delay, repeat) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "identity": () => (/* binding */ identity)
@@ -1595,7 +1565,6 @@ function identity(x) {
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isArrayLike": () => (/* binding */ isArrayLike)
@@ -1611,7 +1580,6 @@ var isArrayLike = (function (x) { return x && typeof x.length === 'number' && ty
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isAsyncIterable": () => (/* binding */ isAsyncIterable)
@@ -1631,7 +1599,6 @@ function isAsyncIterable(obj) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isFunction": () => (/* binding */ isFunction)
@@ -1649,7 +1616,6 @@ function isFunction(value) {
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isInteropObservable": () => (/* binding */ isInteropObservable)
@@ -1671,7 +1637,6 @@ function isInteropObservable(input) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isIterable": () => (/* binding */ isIterable)
@@ -1693,7 +1658,6 @@ function isIterable(input) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isPromise": () => (/* binding */ isPromise)
@@ -1713,7 +1677,6 @@ function isPromise(value) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isReadableStreamLike": () => (/* binding */ isReadableStreamLike),
@@ -1769,7 +1732,6 @@ function isReadableStreamLike(obj) {
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isScheduler": () => (/* binding */ isScheduler)
@@ -1789,7 +1751,6 @@ function isScheduler(value) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "hasLift": () => (/* binding */ hasLift),
@@ -1825,7 +1786,6 @@ function operate(init) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "noop": () => (/* binding */ noop)
@@ -1841,7 +1801,6 @@ function noop() { }
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "pipe": () => (/* binding */ pipe),
@@ -1877,7 +1836,6 @@ function pipeFromArray(fns) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "reportUnhandledError": () => (/* binding */ reportUnhandledError)
@@ -1907,7 +1865,6 @@ function reportUnhandledError(err) {
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createInvalidObservableTypeError": () => (/* binding */ createInvalidObservableTypeError)
@@ -1925,7 +1882,6 @@ function createInvalidObservableTypeError(input) {
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "__assign": () => (/* binding */ __assign),
@@ -2206,35 +2162,12 @@ function __classPrivateFieldIn(state, receiver) {
 
 /***/ }),
 
-/***/ "./tailwind.config.cjs":
-/*!*****************************!*\
-  !*** ./tailwind.config.cjs ***!
-  \*****************************/
-/***/ ((module) => {
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
-  theme: {
-    extend: {
-      colors: {
-        primary: 'rgb(96, 165, 250)',
-      },
-    },
-  },
-  plugins: [],
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/lit-html/development/lit-html.js":
 /*!*******************************************************!*\
   !*** ./node_modules/lit-html/development/lit-html.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "_$LH": () => (/* binding */ _$LH),
@@ -3725,13 +3658,113 @@ if (ENABLE_EXTRA_SECURITY_HOOKS) {
 
 /***/ }),
 
+/***/ "./src/js/components/background/SnowBackground.mjs":
+/*!*********************************************************!*\
+  !*** ./src/js/components/background/SnowBackground.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
+/* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
+
+
+
+// import { siteData$ } from '../observables.mjs';
+
+customElements.define(
+  "snow-background",
+  class extends _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__.BaseElement {
+
+    connectedCallback() {
+      super.connectedCallback();
+      const MIN_DURATION = 10;
+      function makeSnowflake() {
+        const snowflakeBackground = document.querySelector('#snowflakeBackground');
+
+        const snowflake = document.createElement('div');
+        const delay = Math.random() * 20;
+        const initialOpacity = Math.random() * 0.5;
+        const duration = Math.random() * 20 + MIN_DURATION;
+
+        snowflake.classList.add('snowflake');
+        snowflake.style.left = `${Math.random() *  snowflakeBackground.offsetWidth}px`;
+        snowflake.style.animation = `fall ${duration}s linear`;
+        snowflake.style.animationDelay = `${delay}s`;
+        snowflake.style.opacity = initialOpacity;
+
+        snowflakeBackground.appendChild(snowflake);
+
+        setTimeout(() => {
+          snowflakeBackground.removeChild(snowflake);
+          makeSnowflake();
+        }, (duration + delay) * 1000);
+      }
+
+      function startSnowflake() {
+        for(let i=0; i<300; i++) {
+          makeSnowflake();
+        }
+      }
+      setTimeout(() => {
+        startSnowflake();
+      }, 1000);
+    }
+    
+    render() {
+
+      (0,lit_html__WEBPACK_IMPORTED_MODULE_0__.render)(lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
+      <style>
+        ${`
+        @keyframes fall {
+          from {}
+          to {
+            /* top: 100vh; */
+            transform: translateY(100vh);
+            /* opacity: 0; */
+          }
+        }
+
+        .snowflake {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: white;
+          box-shadow: .5px .5px 5px 1px #9A9A9A;
+          position: fixed;
+          top: -5px;
+          z-index: 99999;
+        }
+        `}
+      </style>
+      <div id="snowflakeBackground" class="absolute top-0 w-screen">
+      </div>
+      ${this.children}
+      `, this);
+    }
+  }
+);
+
+/***/ }),
+
+/***/ "./src/js/components/background/index.mjs":
+/*!************************************************!*\
+  !*** ./src/js/components/background/index.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SnowBackground_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SnowBackground.mjs */ "./src/js/components/background/SnowBackground.mjs");
+
+
+/***/ }),
+
 /***/ "./src/js/components/base/BaseElement.mjs":
 /*!************************************************!*\
   !*** ./src/js/components/base/BaseElement.mjs ***!
   \************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BaseElement": () => (/* binding */ BaseElement)
@@ -3760,7 +3793,6 @@ class BaseElement extends HTMLElement {
   \***************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -3811,14 +3843,14 @@ customElements.define(
             ${this.list
                 .map(item => lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
                   <li 
-                    class="flex justify-between items-end p-3 border-b-2 hover:text-blue-400 cursor-pointer"
+                    class="flex justify-between gap-2 items-end p-3 border-b-2 hover:border-primary hover:text-primary cursor-pointer"
                     @click=${() => {
                       location.href = `./${item.file.fileName}`;
                     }}
                   >
-                    <span class="text-lg">
+                    <p class="text-lg flex-1">
                       <strong class="font-bold">[${item.file.pageId}]</strong> ${item.file.title}
-                    </span>
+                    </p>
                     <span class="text-sm">
                       ${new Date(item.file.modifiedDate).toLocaleDateString('ko')}
                     </span>
@@ -3842,7 +3874,6 @@ customElements.define(
   \**********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -3897,7 +3928,6 @@ customElements.define('code-box', class extends _base_BaseElement_mjs__WEBPACK_I
   \********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -3917,7 +3947,8 @@ customElements.define(
       (0,lit_html__WEBPACK_IMPORTED_MODULE_0__.render)(
         lit_html__WEBPACK_IMPORTED_MODULE_0__.html` <img
           src=${this.imgSrc}
-          class="inline-block w-full h-full bg-white rounded-full"
+          class="inline-block w-full h-full bg-white rounded-full cursor-pointer"
+          @click=${() => {location.href = 'https://taeksoolee.github.io'}}
         />`,
         this
       );
@@ -3934,7 +3965,6 @@ customElements.define(
   \*************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -3973,16 +4003,21 @@ customElements.define(
       (0,lit_html__WEBPACK_IMPORTED_MODULE_0__.render)(
         lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
           <div class="mt-4 w-30">
-            <h2 class="text-xl mb-4 font-bold">최근 게시글</h2>
-
-            ${this.list.map(item => lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
-              <div 
-                class="mb-2 cursor-pointer hover:text-blue-400" 
-                @click=${() => {
-                  location.href = `/blog/site/${item.dir.join('/')}/${item.file.fileName}`
-                }}
-              >${item.file.title}</div>
-            `)}
+            <div class="mb-2">
+              <h4 class="text-lg text-white font-bold">🕰 최근 게시글</h4>
+            </div>
+            <div class="bg-white">
+              ${this.list.map(item => lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
+                <div 
+                  class="p-3 cursor-pointer border-b-2 hover:border-primary hover:text-primary" 
+                  @click=${() => {
+                    location.href = `/blog/site/${item.dir.join('/')}/${item.file.fileName}`
+                  }}
+                >
+                  ${item.file.title}
+                </div>
+              `)}
+            </div>
             
             <!-- <h2 class="text-xl mt-4">인기 게시글</h2>
             <div>Development - evcaro 개발 후기</div> -->
@@ -4003,7 +4038,6 @@ customElements.define(
   \********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CategoryList_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CategoryList.mjs */ "./src/js/components/common/CategoryList.mjs");
 /* harmony import */ var _CodeBox_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CodeBox.mjs */ "./src/js/components/common/CodeBox.mjs");
@@ -4022,7 +4056,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -4036,14 +4069,41 @@ customElements.define(
       super();
     }
 
-    scrollHandler() {
-      // const y = 
+    _height = 42; // px
+
+    connectedCallback() {
+      super.connectedCallback();
+      this.scrollHandler();
+      window.addEventListener('scroll', this.scrollHandler.bind(this));
+    }
+
+    /**
+     * @type {(e: Event) => void}
+     */
+    scrollHandler(e) {
+      const clsList = this.querySelector('header').classList;
+      if (window.scrollY > this._height) {
+        clsList.remove('bg-blue-950');
+        clsList.add('bg-transparent');
+
+        clsList.remove('justify-center');
+        clsList.add('justify-end');
+      } else {
+        clsList.remove('bg-transparent');
+        clsList.add('bg-blue-950');
+
+        clsList.remove('justify-end');
+        clsList.add('justify-center');
+      }
+
+      clsList.remove('hidden');
+      clsList.add('flex');
     }
 
     render() {
       const template = lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
-        <header class="bg-primary flex flex-row justify-center w-full h-20 relative">
-          <div class="w-24 h-24 m-4">
+        <header class="hidden bg-blue-950 flex-row justify-center w-full relative" style="height: ${this._height}px;">
+          <div class="w-14 h-14 m-2">
             <me-img></me-img>
           </div>
         </header>
@@ -4062,7 +4122,6 @@ customElements.define(
   \************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _base_BaseElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/BaseElement.mjs */ "./src/js/components/base/BaseElement.mjs");
@@ -4083,14 +4142,16 @@ customElements.define(
         return string.toLowerCase().replace(/\s+/g, "-");
       };
 
-      const anchorTemplate = (path) => lit_html__WEBPACK_IMPORTED_MODULE_0__.html`<li class="flex-1">
-        <a
-          class="block p-5 border-2 hover:border-blue-400"
-          href=${`/blog/site/${path}`}
-          @click=${this.anchorHandler.bind(this)}
-          >${path === "" ? "Root" : path.replace(/-/g, ' ')}</a
-        >
-      </li>`;
+      const anchorTemplate = (path) => lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
+        <li class="flex-1">
+          <a
+            class="block p-3 border-b-2 hover:border-primary hover:text-primary"
+            href=${`/blog/site/${path}`}
+            @click=${this.anchorHandler.bind(this)}
+            >${path === "" ? "Root" : path.replace(/-/g, ' ')}</a
+          >
+        </li>
+      `;
 
       const loadingTemplate = this.isLoading
         ? lit_html__WEBPACK_IMPORTED_MODULE_0__.html`<div
@@ -4102,8 +4163,11 @@ customElements.define(
         : "";
 
       const template = lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
-        <nav>
-          <ul class="flex flex-col w-40">
+        <div class="mb-4">
+          <h4 class="text-lg text-white font-bold">📚 카테고리 바로가기</h4>
+        </div>
+        <nav class="shadow-md bg-white">
+          <ul class="flex flex-col">
             ${[
               "", 
               "tech-product", 
@@ -4129,7 +4193,6 @@ customElements.define(
   \****************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _utils_format_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/format.js */ "./src/js/utils/format.js");
@@ -4169,18 +4232,25 @@ customElements.define(
       // console.log(formatTimeago(new Date(window.document.lastModified), 'ko-kr'));
 
       const template = lit_html__WEBPACK_IMPORTED_MODULE_0__.html`
+      <snow-background>
+      <main class="min-h-screen bg-sky-950">
         <div class="sticky top-0 z-50">
           <common-header></common-header>
         </div>
-        <div class="flex justify-center flex-1 w-full mt-12 h-full m-0 lg:m-auto lg:w-8/12">
-          <!--  -->
-          <section class="hidden xl:block px-4 py-10 w-48">
-            <div class="sticky top-32">
-              <common-nav></common-nav>
+        <div class="flex justify-center flex-1 w-full h-full m-auto">
+          <!-- 메뉴 -->
+          <section class="px-4 py-10 mt-0 w-50">
+            <div class="sticky top-16 w-48">
+              <div class="mb-8 text-white">
+                <p>안녕하세요. 개발자 이택수 입니다. 😊</p>
+              </div>
+              <div>
+                <common-nav></common-nav>
+              </div>
             </div>
           </section>
-          <!--  -->
-          <section class="flex-1 w-4/5 px-4 py-10">
+          <!-- 게시글 -->
+          <section class="w-[800px] px-4 py-10 bg-white" style="min-height: calc(100vh - 42px);">
             <div>
               <span class="text-xl mr-5 text-gray-700 hover:text-blue-400 cursor-pointer">
                 <i class="fa fa-arrow-left" @click=${handleClick}></i>
@@ -4200,13 +4270,15 @@ customElements.define(
               ${this.children}
             </article>
           </section>
-          <!--  -->
-          <section class="min-h-full hidden xl:block px-4 py-10 w-48">
-            <div class="sticky top-32">
+          <!-- 최근 작성 목록 -->
+          <section class="hidden xl:block px-4 py-10 w-48">
+            <div class="sticky top-16 w-48">
               <recent-list></recent-list>
             </div>
           </section>
         </div>
+      </main>
+      </snow-background>
       `;
       (0,lit_html__WEBPACK_IMPORTED_MODULE_0__.render)(template, this);
     }
@@ -4224,7 +4296,6 @@ customElements.define(
   \********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CommonHeader_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CommonHeader.mjs */ "./src/js/components/layout/CommonHeader.mjs");
 /* harmony import */ var _CommonNav_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CommonNav.mjs */ "./src/js/components/layout/CommonNav.mjs");
@@ -4242,7 +4313,6 @@ __webpack_require__.r(__webpack_exports__);
   \*******************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "siteData$": () => (/* binding */ siteData$)
@@ -4278,7 +4348,6 @@ const siteData$ = (0,rxjs_fetch__WEBPACK_IMPORTED_MODULE_0__.fromFetch)('/blog/d
   \********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "displayDateFormatter": () => (/* binding */ displayDateFormatter)
@@ -4287,6 +4356,33 @@ const displayDateFormatter = Intl.DateTimeFormat('ko', {
   dateStyle: 'long',
   timeStyle: 'short'
 })
+
+/***/ }),
+
+/***/ "./tailwind.config.js":
+/*!****************************!*\
+  !*** ./tailwind.config.js ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/** @type {import('tailwindcss').Config} */
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  content: [],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#90caf9',
+        red: 'red',
+      },
+    },
+  },
+  plugins: [],
+});
+
 
 /***/ })
 
@@ -4347,22 +4443,22 @@ const displayDateFormatter = Intl.DateTimeFormat('ko', {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!************************************!*\
   !*** ./src/js/components/index.js ***!
   \************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_index_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common/index.mjs */ "./src/js/components/common/index.mjs");
 /* harmony import */ var _layout_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layout/index.mjs */ "./src/js/components/layout/index.mjs");
-/* harmony import */ var _tailwind_config_cjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../tailwind.config.cjs */ "./tailwind.config.cjs");
+/* harmony import */ var _background_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background/index.mjs */ "./src/js/components/background/index.mjs");
+/* harmony import */ var _tailwind_config_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../tailwind.config.js */ "./tailwind.config.js");
 
 
 
 
 
-window.tailwind.config = _tailwind_config_cjs__WEBPACK_IMPORTED_MODULE_2__;
+window.tailwind.config = _tailwind_config_js__WEBPACK_IMPORTED_MODULE_3__["default"];
 })();
 
 /******/ })()

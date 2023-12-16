@@ -44,14 +44,14 @@ customElements.define(
             ${this.list
                 .map(item => html`
                   <li 
-                    class="flex justify-between items-end p-3 border-b-2 hover:text-blue-400 cursor-pointer"
+                    class="flex justify-between gap-2 items-end p-3 border-b-2 hover:border-primary hover:text-primary cursor-pointer"
                     @click=${() => {
                       location.href = `./${item.file.fileName}`;
                     }}
                   >
-                    <span class="text-lg">
+                    <p class="text-lg flex-1">
                       <strong class="font-bold">[${item.file.pageId}]</strong> ${item.file.title}
-                    </span>
+                    </p>
                     <span class="text-sm">
                       ${new Date(item.file.modifiedDate).toLocaleDateString('ko')}
                     </span>

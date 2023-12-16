@@ -33,18 +33,25 @@ customElements.define(
       // console.log(formatTimeago(new Date(window.document.lastModified), 'ko-kr'));
 
       const template = html`
+      <snow-background>
+      <main class="min-h-screen bg-sky-950">
         <div class="sticky top-0 z-50">
           <common-header></common-header>
         </div>
-        <div class="flex justify-center flex-1 w-full mt-12 h-full m-0 lg:m-auto lg:w-8/12">
-          <!--  -->
-          <section class="hidden xl:block px-4 py-10 w-48">
-            <div class="sticky top-32">
-              <common-nav></common-nav>
+        <div class="flex justify-center flex-1 w-full h-full m-auto">
+          <!-- 메뉴 -->
+          <section class="px-4 py-10 mt-0 w-50">
+            <div class="sticky top-16 w-48">
+              <div class="mb-8 text-white">
+                <p>안녕하세요. 개발자 이택수 입니다. 😊</p>
+              </div>
+              <div>
+                <common-nav></common-nav>
+              </div>
             </div>
           </section>
-          <!--  -->
-          <section class="flex-1 w-4/5 px-4 py-10">
+          <!-- 게시글 -->
+          <section class="w-[800px] px-4 py-10 bg-white" style="min-height: calc(100vh - 42px);">
             <div>
               <span class="text-xl mr-5 text-gray-700 hover:text-blue-400 cursor-pointer">
                 <i class="fa fa-arrow-left" @click=${handleClick}></i>
@@ -64,13 +71,15 @@ customElements.define(
               ${this.children}
             </article>
           </section>
-          <!--  -->
-          <section class="min-h-full hidden xl:block px-4 py-10 w-48">
-            <div class="sticky top-32">
+          <!-- 최근 작성 목록 -->
+          <section class="hidden xl:block px-4 py-10 w-48">
+            <div class="sticky top-16 w-48">
               <recent-list></recent-list>
             </div>
           </section>
         </div>
+      </main>
+      </snow-background>
       `;
       render(template, this);
     }

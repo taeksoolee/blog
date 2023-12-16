@@ -32,16 +32,21 @@ customElements.define(
       render(
         html`
           <div class="mt-4 w-30">
-            <h2 class="text-xl mb-4 font-bold">최근 게시글</h2>
-
-            ${this.list.map(item => html`
-              <div 
-                class="mb-2 cursor-pointer hover:text-blue-400" 
-                @click=${() => {
-                  location.href = `/blog/site/${item.dir.join('/')}/${item.file.fileName}`
-                }}
-              >${item.file.title}</div>
-            `)}
+            <div class="mb-2">
+              <h4 class="text-lg text-white font-bold">🕰 최근 게시글</h4>
+            </div>
+            <div class="bg-white">
+              ${this.list.map(item => html`
+                <div 
+                  class="p-3 cursor-pointer border-b-2 hover:border-primary hover:text-primary" 
+                  @click=${() => {
+                    location.href = `/blog/site/${item.dir.join('/')}/${item.file.fileName}`
+                  }}
+                >
+                  ${item.file.title}
+                </div>
+              `)}
+            </div>
             
             <!-- <h2 class="text-xl mt-4">인기 게시글</h2>
             <div>Development - evcaro 개발 후기</div> -->

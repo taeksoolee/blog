@@ -56,4 +56,8 @@ function generatePageSource() {
   fs.writeFileSync(path.resolve(__dirname, 'data', 'site-data.json'), JSON.stringify(r), 'utf-8'); 
 }
 
-generatePageSource();
+try {
+  generatePageSource();
+} catch(err) {
+  console.log(err);
+}
