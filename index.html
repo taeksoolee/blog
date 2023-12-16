@@ -1,5 +1,25 @@
-<h1>블로그 대문</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://taeksoolee.github.io/images/my-profile-img.png">
+  <title>이택수 블로그 입니다.</title>
 
-<div>HELLO WORLD</div>
-
-<a href="/blog/site">바로가기</ㅁ>
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import tailwindConfig from '/blog/tailwind.config.js';
+    tailwind.config = tailwindConfig;
+  </script>
+  <script src="/script.js"></script>
+</head>
+<body>
+  <main class="w-screen h-screen flex flex-col align-center justify-center">
+    <p class="text-center text-4xl text-slate-600 mb-8">Taeksoolee 블로그 입니다.</p>
+    <p class="text-center">
+      <a href="/blog/site" class="text-sky-400 hover:text-sky-600 hover:underline">블로그 구경하러 하기</a>
+    </p>
+  </main>
+</body>
+</html>
