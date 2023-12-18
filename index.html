@@ -7,6 +7,12 @@
   <title>이택수 블로그 입니다.</title>
   
   <script src="/script.js"></script>
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import tailwindConfig from '/blog/tailwind.config.js';
+    tailwind.config = tailwindConfig;
+  </script>
 </head>
 <body>
   <main class="w-screen h-screen flex flex-col align-center justify-center">
