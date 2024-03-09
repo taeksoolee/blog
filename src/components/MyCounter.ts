@@ -5,9 +5,6 @@ import {customElement, property} from 'lit/decorators.js';
 @customElement('my-counter')
 export class MyCounter extends LitElement {
   static styles = css`
-    .container {
-      @apply mx-auto px-4;
-    }
   `;
 
   @property({type: Number})
@@ -26,5 +23,4 @@ export class MyCounter extends LitElement {
     </div>
     `;
   }
-
 }
