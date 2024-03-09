@@ -5,9 +5,9 @@ import {customElement, property} from 'lit/decorators.js';
 @customElement('my-counter')
 export class MyCounter extends LitElement {
   static styles = css`
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+    .container {
+      @apply mx-auto px-4;
+    }
   `;
 
   @property({type: Number})
@@ -19,8 +19,11 @@ export class MyCounter extends LitElement {
 
   render() {
     return html`
-      <div>${this.count}</div>
+    <div class="container">
+      <h3>Counter</h3>
+      <div class="text-red-400">${this.count}</div>
       <button class="text-red-400" @click=${this.increase}>+</button>
+    </div>
     `;
   }
 

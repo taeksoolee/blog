@@ -4,20 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/js/index.bundle.js"></script>
-  
-<title>Algorithm-</title>
-
+  {% block header %}{% endblock %}
 </head>
 <body>
-  <nav>
-  NAV
-</nav>
+  {% include "includes/nav.html" %}
   
-  
-<h1 class="text-red-400">Hello My Blog</h1>
-
-<my-element mood="awesome"></my-element>
-<my-counter></my-counter>
-
+  {% block body %}{% endblock %}
 </body>
 </html>
