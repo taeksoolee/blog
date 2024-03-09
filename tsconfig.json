@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./docs/js/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es2015", // or es2017
+    "jsx": "preserve", // or react-jsx
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+  }
+}
