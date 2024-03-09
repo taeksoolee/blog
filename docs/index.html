@@ -4,8 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taeksoolee Blog</title>
+
+  <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Hello My Blog</h1>
+  <header hx-get="/layout/nav.html" hx-trigger="load"></header>
+
+  <main>
+    <h1 role="heading">Hello My Blog</h1>
+    <div style="width: 400px; margin-bottom: var(--spacing);">
+      <article class="card">
+        <header>
+          <h3>MOON & CAT1</h3>
+        </header>
+        <img src="/assets/img/moon_cat.jpeg" alt="Card Image" />
+        <p role="text">The cat is looking at the moon. The cat is very cute.</p>
+        <footer>
+          <a href="#" role="link">Link</a>
+        </footer>
+      </article>
+    </div>
+
+    <div style="width: 400px; margin-bottom: var(--spacing);">
+      <article class="card">
+        <header>
+          <h3>MOON & CAT2</h3>
+        </header>
+        <img src="/assets/img/moon_cat2.jpeg" alt="Card Image" />
+        <p role="text">The cat is looking at the moon. The cat is very cute.</p>
+        <footer>
+          <a href="#" role="link">Link</a>
+        </footer>
+      </article>
+    </div>
+  </main>
+
+  <footer hx-get="/layout/footer.html" hx-trigger="load"></footer>
 </body>
 </html>

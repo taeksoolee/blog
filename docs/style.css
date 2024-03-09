@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* #007bff; */
+  --primary-color: 0, 123, 255;
+  /* #6c757d */
+  --secondary-color: 108, 117, 125;
+  /* #28a745 */
+  --success-color: 40, 167, 69;
+  /* #dc3545 */
+  --danger-color: 220, 53, 69;
+  /* #ffc107 */
+  --warning-color: 255, 193, 7;
+  /* #17a2b8 */
+  --info-color: 23, 162, 184;
+  /* #f8f9fa */
+  --light-color: 248, 249, 250;
+  /* #343a40 */
+  --dark-color: 52, 58, 64;
+
+  --spacing: 1rem;
+
+  --size-sm: 0.5rem;
+  --size-md: 1.0rem;
+  --size-lg: 1.5rem;
+  --size-xl: 2.0rem;
+
+  --header-height-size: 5; 
+  --footer-height-size: 10; 
+
+  --round-sm: 0.4rem;
+  --round-md: 0.8rem;
+  --round-lg: 1.2rem;
+
+  --shadow-md: 0px 1px 2px 1px rgba(var(--secondary-color), 0.5);
+}
+
+body>header {
+  width: 100vw;
+  height: calc(var(--spacing) * var(--header-height-size));
+  background-color: rgba(var(--primary-color), 1);
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: calc(var(--spacing) * 1);
+  margin-right: calc(var(--spacing) * 1);
+}
+
+h1[aria-label="logo"] {
+  color: rgba(var(--light-color), 1);
+
+  font-size: var(--size-xl);
+}
+
+ul[role="menubar"] {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+ul[role="menubar"] :where(a, li) {
+  color: rgba(var(--light-color), 1);
+  text-decoration: none;
+}
+
+body>footer {
+  background-color: rgba(var(--light-color), 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(var(--spacing) * var(--footer-height-size));
+}
+
+footer p[role="doc-footnote"] {
+  color: rgba(var(--secondary-color), 1);
+}
+
+main {
+  --padding: calc(var(--spacing) * 2);
+
+  height: fit-content;
+
+  margin: var(--padding);
+
+  min-height: calc(100vh - (var(--spacing) * var(--header-height-size)) - (var(--spacing) * var(--footer-height-size)) - (var(--padding-y) * 2));
+}
+
+h1[role="heading"] {
+  color: rgba(var(--dark-color), 1);
+  font-size: var(--size-xl);
+
+  margin-bottom: calc(var(--spacing) * 1);
+}
+
+article.card {
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  height: 100%;
+
+  border-radius: var(--round-md);
+}
+
+article.card header {
+  padding: calc(var(--spacing) * 1);
+}
+
+article.card header :where(h1,h2,h3,h4,h5,h6) {
+  font-size: var(--size-lg);
+  text-wrap: nowrap;
+}
+
+article.card img {
+  width: 100%;
+}
+
+article.card>p {
+  font-size: var(--size-md);
+  padding: var(--spacing);
+}
+
+article.card footer {
+  padding: calc(var(--spacing) * 1);
+}
+
+a[role="link"] {
+  text-decoration: none;
+  color: rgba(var(--primary-color), 1);
+  font-size: var(--size-md);
+}
