@@ -1,17 +1,31 @@
 <nav>
   <div>
     <!-- <img alt="logo" aria-label="logo" /> -->
-    <h1 aria-label="logo">Blog</h1>
+    <h1 aria-label="logo">
+      <a href="/">Blog</a>
+    </h1>
   </div>
   <ul role="menubar">
     <li role="menuitem">
-      <a href="#">Category</a>
+      <a href="#" onclick="$('#searchModal').get(0).showModal();">Search</a>
     </li>
     <li role="menuitem">
-      <a href="#">Category</a>
+      <a href="/category">Category</a>
     </li>
     <li role="menuitem">
-      <a href="#">Category</a>
+      <a href="https://github.com/taeksoolee/blog">Github</a>
     </li>
   </ul>
 </nav>
+
+<dialog id="searchModal" role="searchbox">
+  <div>
+    <input placeholder="검색어를 입력해주세요." />
+    <button onclick="$('#searchModal').get(0).close();">
+      Search
+    </button>
+    <button ghost onclick="$('#searchModal').get(0).close();">
+      X
+    </button>
+  </div>
+</dialog>
